@@ -1,0 +1,89 @@
+:root {
+  --background-color: #eeeae1;
+  --primary-color: #fac758;
+  --primary-text-color: #252422;
+}
+
+* {
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Karla", sans-serif;
+  font-size: 24px;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-size: 64px;
+}
+
+h2 {
+  font-family: "Montserrat";
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 99svw;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.nav-bar {
+  background-color: var(--primary-color);
+  display: flex;
+  gap: 120px;
+  padding: 10px 30px;
+  position: sticky;
+  top: 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 106px;
+}
+
+.available-services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.service {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 6px 0;
+  gap: 8px;
+  height: fit-content;
+  width: 373px;
+}
+
+#about-us {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  padding: 0 15px;
+}
+
+#about-us p {
+  width: 416px;
+  height: 460px;
+  align-content: center;
+}
