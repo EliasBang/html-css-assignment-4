@@ -96,9 +96,6 @@ select {
 
 .example {
   background-color: var(--secondary-color);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px;
   height: 100%;
   max-width: 370px;
   padding: 10px 20px;
