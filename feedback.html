@@ -46,15 +46,15 @@
 
             <label for="course-input">What course did you choose?</label>
             <select name="course-input" id="course-input">
-                <option value="mosaikk-kunst">Mosaikk kunst</option>
-                <option value="akvarellmaling">Akvarellmaling</option>
-                <option value="lerretsmaling">Lerretsmaling</option>
+                <option value="Mosaikk kunst">Mosaikk kunst</option>
+                <option value="Akvarellmaling">Akvarellmaling</option>
+                <option value="Lerretsmaling">Lerretsmaling</option>
             </select>
 
             <fieldset id="feedback-field">
                 <legend>Feedback:</legend>
 
-                <textarea class="tall-textinput" placeholder="Max 180 characters"
+                <textarea class="tall-textinput" id="feedback-input" placeholder="Max 180 characters"
                     oninput="if(this.value.length > 180) this.value = this.value.slice(0, 180);"></textarea>
             </fieldset>
 
