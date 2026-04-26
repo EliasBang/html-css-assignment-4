@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <title>Feedback</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Craftville</h1>
+        <div class="nav-bar">
+            <a href="index.html">
+                <h2>Home</h2>
+            </a>
+            <a href="booking.html">
+                <h2>Booking</h2>
+            </a>
+            <a href="gallery.html">
+                <h2>Gallery</h2>
+            </a>
+            <a href="feedback.html">
+                <h2>Feedback</h2>
+            </a>
+        </div>
+
+    </header>
+    <main id="feedback-main">
+        <form action="" id="feedback-form">
+            <label for="date-input">What day did you visit? (optional)</label>
+            <input type="date" id="date-input">
+
+
+            <label for="amount-input">Did you come with someone? (optional)</label>
+            <input type="text" id="amount-input" placeholder="5 people"
+                oninput="if(this.value.length > 15) this.value = this.value.slice(0, 15);">
+
+            <label for="course-input">What course did you choose?</label>
+            <select name="course-input" id="course-input">
+                <option value="mosaikk-kunst">Mosaikk kunst</option>
+                <option value="akvarellmaling">Akvarellmaling</option>
+                <option value="lerretsmaling">Lerretsmaling</option>
+            </select>
+
+            <fieldset id="feedback-field">
+                <legend>Feedback:</legend>
+
+                <textarea class="tall-textinput" placeholder="Max 180 characters"
+                    oninput="if(this.value.length > 180) this.value = this.value.slice(0, 180);"></textarea>
+            </fieldset>
+
+            <button type="submit" value="submit" id="feedback-submit-btn">Submit</button>
+
+        </form>
+        <div id="feedback-examples">
+            <div class="example">
+                <div class="info">
+                    <p>Date:</p>
+                    <p>01.04.26</p>
+                    <p>Course:</p>
+                    <p>Mosaikk kunst</p>
+                    <p>Came with:</p>
+                    <p>My wife</p>
+                    <p>Feedback:</p>
+                </div>
+                <div class="feedback-text">
+                    <p>Not much to say. It was exactly like advertised. We did art and had a good social time.</p>
+                </div>
+            </div>
+            <div class="example">
+                <div class="info">
+                    <p>Date:</p>
+                    <p>02.04.26</p>
+                    <p>Course:</p>
+                    <p>Akvarellmaling</p>
+                    <p>Came with:</p>
+                    <p>My dog</p>
+                    <p>Feedback:</p>
+                </div>
+                <div class="feedback-text">
+                    <p>10/10! They let me bring my dog, and not only that. They even let him play with the paint on a
+                        canvas on the floor. I’ll 100% come back again</p>
+                </div>
+            </div>
+            <div class="example">
+                <div class="info">
+                    <p>Date:</p>
+                    <p>03.04.26</p>
+                    <p>Course:</p>
+                    <p>Lerretsmaling</p>
+                    <p>Came with:</p>
+                    <p>Ingen</p>
+                    <p>Feedback:</p>
+                </div>
+                <div class="feedback-text">
+                    <p>Jeg likte det godt. Var ganske mange utlendinger der, overraskende nok. En ting jeg håper de kan
+                        forbedre er å enten velge norsk eller engelsk. Akkurat nå er det en rar blanding.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>All rights belong to CRAFTSVILLA (Entreprenør) 2026</p>
+    </footer>
+</body>
+
+</html>
